@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+    portal5:
+        build: ./portal5
+        volumes:
+          - ~/Documents/testproject:/usr/local/testproject
+        ports:
+          - '80:80'
+        restart: always
+        tty: true

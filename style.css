@@ -1,0 +1,121 @@
+html {
+  font-size: 12px;
+}
+
+body {
+    font-family: 'VT323', monospace;
+    color: black;
+    min-width: 200px;
+    max-width: 1000px;
+    margin: auto;
+    background-image: url('../testproject/images/backgroundtile.png');
+    background-repeat: repeat;
+  }
+  
+  /* unvisited link */
+  a:link {
+  color: green;
+  }
+
+  /* mouse over link */
+  a:hover {
+  color: HotPink;
+  }
+  /* selected link */
+  a:active {
+  color: greenyellow;
+  }
+  
+  h1 {
+    font-size: 70;
+    text-align: center;
+  }
+  
+  .cat {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .othercat {
+    height: 48px;
+    width: 48px;
+  }
+
+  .socialmedia {
+    width: 48px;
+    height: auto;
+  }
+  
+  .caption {
+    text-align: center;
+    background-color: rgba(102, 134, 180, 0.5);
+    border: 2px rgb(0, 30, 128) solid;
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .grid {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: 4;
+    grid-template-columns: 3;
+    margin: 20px 20px 20px 20px;
+  }
+
+  .box {
+    color: white;
+    background-color: rgba(102, 134, 180, 0.5);
+    border-radius: 5px;
+    border: 2px rgb(0, 30, 128) solid;
+    text-align: center;
+  }
+
+  .a {
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 1;
+    padding: 20px;
+  }
+
+
+  .b {
+    grid-row: 1 / span 3;
+    grid-column: 2 / span 2;
+    color: rgb(0, 30, 128);
+    color: white;
+    font-size: 2.75rem;
+    text-shadow: 0px 0px 3px rgb(255, 0, 0);
+    background-image: url('../testproject/images/mountain2.png');
+    background-size: cover;
+    padding: 20px;
+    width: auto;
+    height: auto;
+  }
+
+  .c {
+    grid-row: 4 / span 2;
+    grid-column: 1 / span 3;
+    padding: 20px;
+    color: rgb(211, 211, 211);
+    background-color: rgba(54, 51, 51, 0.9)
+  }
+
+  /* not in use currently
+  .table {
+    display: inline-block;
+    border: 2px rgb(0, 0, 0) solid;
+  } 
+  
+
+  This should make a button appear like it's being pressed (need to create/amend the classes)
+  .contact-btn a { 
+  position: relative;
+}
+  .contact-btn a:active {
+  top: 2px;
+}
+  
+  
+  
+  
+  */

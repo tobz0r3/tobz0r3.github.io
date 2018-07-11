@@ -1,0 +1,129 @@
+html {
+  font-size: 16px; /* global font size */
+}
+
+body {
+  font-family: 'VT323', monospace; /* default typeface */
+  color: black; /* default font colour */
+  margin: auto; /* automatic margin centers the contents of the body on the page */
+  background-color: rgb(159, 169, 184); /* sets the background color of the main page*/
+}
+  
+a:link { /* unvisited link */
+  color: rgb(5, 34, 77);
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(5, 34, 77);
+}
+a:hover { /* mouse over link */
+  color: rgb(255, 105, 180);
+}
+a:active { /* selected link */
+  color: rgb(173, 255, 47);
+}
+  
+h1 { /* page title text*/
+  font-size: 70;
+  text-align: center;
+}
+  
+.caption { /* subtitle text box */
+  text-align: center;
+  background-color: rgba(102, 134, 180, 0.5);
+  border: 2px rgb(0, 30, 128) solid;
+  margin: 20px 20px 20px 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.cat { /* black cat rules */
+  max-width: 80%;
+  height: auto;
+}
+
+.zeldalink {
+  max-width: 20%; /* the original image is way too big so I've reduced it this way */
+}
+
+.grid { /* body grid layout */
+  display: grid;
+  grid-gap: 5px;
+  grid-template-rows: 4;
+  grid-template-columns: 3;
+  margin: 20px 20px 20px 20px;
+}
+
+.box { /* generic grid box rules */
+  color: white;
+  background-color: rgba(102, 134, 180, 0.5);
+  border-radius: 5px;
+  border: 2px rgb(0, 30, 128) solid;
+  text-align: center;
+}
+
+.a { /* box a rules (nav) */
+  grid-row: 1 / span 3;
+  grid-column: 1 / span 1;
+  font-size: 20px;
+  padding: 20px;
+  font-size: 2.75rem;
+}
+
+.b { /* box b rules (showcase) */
+  grid-row: 1 / span 3;
+  grid-column: 2 / span 2;
+  color: rgb(0, 30, 128);
+  background-image: url('images/mountain2.png'); /* default image - will depend on screen size*/
+  background-size: cover;
+  padding: 20px; /* prevents the content become to close to the edges */
+}
+
+.btitle { /* box b text title rules */
+  color: white;
+  font-size: 2.75rem;
+  text-shadow: 0px 0px 3px rgb(255, 0, 0);
+}
+
+.c { /* social media rules (footer) */
+  grid-row: 4 / span 2;
+  grid-column: 1 / span 3;
+  padding: 20px;
+  color: rgb(211, 211, 211);
+  background-color: rgba(54, 51, 51, 0.9)
+}
+
+.othercat { /* ginger cat rules */
+  height: 48px;
+  width: auto;
+}
+
+.socialmedia { /* social media images rules */
+  width: 48px;
+  height: auto;
+}
+
+/* laptop or desktop screens - main body should only be max. 1000px wide */
+@media only screen and (min-width: 1200px) {
+  body {
+  max-width: 1000px;
+  }
+}
+
+/* tablet-esque screens - change the background image of b to... */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .b {
+  background-image: url('images/mountain2green.png'); 
+  }
+}
+
+/* phone/smaller screens - change the background image of b to... and increase the font size of the nav box */
+@media only screen and (max-width: 767px) {
+  .a {
+  font-size: 2.5rem;
+  }
+  
+  .b {
+  background-image: url('images/mountain2red.png');
+  }
+}
