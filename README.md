@@ -1,1 +1,1 @@
-# tobz0r3.github.io
+# This is my make-it-in-a-day templated website to act as a showcase/portfolio/profile page.
